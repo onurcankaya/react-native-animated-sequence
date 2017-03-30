@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
-import { AppRegistry, View, StyleSheet, Text } from 'react-native'
+import React, { Component } from 'react';
+import { AppRegistry, View, StyleSheet } from 'react-native';
 
 export default class AnimatedSequence extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.box}>
-          <Text style={styles.text}>Box</Text>
-        </View>
+        <View style={styles.box} />
       </View>
     );
   }
@@ -23,11 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#333",
     width: 100,
     height: 100,
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  text: {
-    color: '#ddd'
   }
 })
 
